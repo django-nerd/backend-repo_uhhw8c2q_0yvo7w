@@ -1,11 +1,12 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [144] using StatReload
-INFO:     Started server process [146]
+INFO:     Started reloader process [193] using StatReload
+INFO:     Started server process [195]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:47666 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:47680 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:57956 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:57960 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57964 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -58,11 +59,10 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
 
-INFO:     172.20.0.1:47682 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47692 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47696 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47682 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47692 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:57978 - "GET /api/timeline HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57986 - "GET /api/key-facts HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57960 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57978 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -115,8 +115,9 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
 
-INFO:     172.20.0.1:47696 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47682 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:57986 - "GET /api/timeline HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57960 - "GET /api/key-facts HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57986 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -169,8 +170,9 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
 
-INFO:     172.20.0.1:47696 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47720 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:57998 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58004 - "GET /api/timeline HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58012 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -223,10 +225,10 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
 
-INFO:     172.20.0.1:47698 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47724 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47706 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47698 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:58008 - "GET /api/key-facts HTTP/1.1" 200 OK
+INFO:     172.20.0.1:57998 - "GET /api/overview HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58004 - "GET /api/timeline HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58008 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
@@ -279,175 +281,8 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
 
-INFO:     172.20.0.1:47724 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47706 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:47724 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        self.scope, self.receive, self.send
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/applications.py", line 1106, in __call__
-    await super().__call__(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/applications.py", line 122, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 184, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 162, in __call__
-    await self.app(scope, receive, _send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 91, in __call__
-    await self.simple_response(scope, receive, send, request_headers=headers)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 146, in simple_response
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
-    await self.app(scope, receive, sender)
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
-    raise e
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 718, in __call__
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 66, in app
-    response = await func(request)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 292, in app
-    content = await serialize_response(
-              ^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<9 lines>...
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 155, in serialize_response
-    raise ResponseValidationError(
-        errors=_normalize_errors(errors), body=response_content
-    )
-fastapi.exceptions.ResponseValidationError: 1 validation errors:
-  {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
-
-INFO:     172.20.0.1:47706 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54724 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54728 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54730 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        self.scope, self.receive, self.send
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/applications.py", line 1106, in __call__
-    await super().__call__(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/applications.py", line 122, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 184, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 162, in __call__
-    await self.app(scope, receive, _send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 91, in __call__
-    await self.simple_response(scope, receive, send, request_headers=headers)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 146, in simple_response
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
-    await self.app(scope, receive, sender)
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
-    raise e
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 718, in __call__
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 66, in app
-    response = await func(request)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 292, in app
-    content = await serialize_response(
-              ^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<9 lines>...
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 155, in serialize_response
-    raise ResponseValidationError(
-        errors=_normalize_errors(errors), body=response_content
-    )
-fastapi.exceptions.ResponseValidationError: 1 validation errors:
-  {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
-
-INFO:     172.20.0.1:54742 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54724 - "GET /api/overview HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54728 - "GET /api/timeline HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54742 - "GET /api/key-facts HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54724 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        self.scope, self.receive, self.send
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
-    return await self.app(scope, receive, send)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/applications.py", line 1106, in __call__
-    await super().__call__(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/applications.py", line 122, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 184, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/errors.py", line 162, in __call__
-    await self.app(scope, receive, _send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 91, in __call__
-    await self.simple_response(scope, receive, send, request_headers=headers)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/cors.py", line 146, in simple_response
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
-    raise exc
-  File "/usr/local/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
-    await self.app(scope, receive, sender)
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
-    raise e
-  File "/usr/local/lib/python3.13/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 718, in __call__
-    await route.handle(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 276, in handle
-    await self.app(scope, receive, send)
-  File "/usr/local/lib/python3.13/site-packages/starlette/routing.py", line 66, in app
-    response = await func(request)
-               ^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 292, in app
-    content = await serialize_response(
-              ^^^^^^^^^^^^^^^^^^^^^^^^^
-    ...<9 lines>...
-    )
-    ^
-  File "/usr/local/lib/python3.13/site-packages/fastapi/routing.py", line 155, in serialize_response
-    raise ResponseValidationError(
-        errors=_normalize_errors(errors), body=response_content
-    )
-fastapi.exceptions.ResponseValidationError: 1 validation errors:
-  {'type': 'list_type', 'loc': ('response', 'disclaimer'), 'msg': 'Input should be a valid list', 'input': 'Links are provided for reference. Exercise critical thinking and verify with multiple credible sources.', 'url': 'https://errors.pydantic.dev/2.12/v/list_type'}
-
-INFO:     172.20.0.1:54742 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
+INFO:     172.20.0.1:57998 - "GET /api/key-facts HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58004 - "GET /api/resources HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "/usr/local/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 408, in run_asgi
